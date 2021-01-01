@@ -1,6 +1,5 @@
 <template>
   <div class="year-switcher">
-    {{ 'Select year:' }}
     <button
       :class="classNameGenerator(year)"
       v-for="(year, index) in generatedYears(selectedYear)"

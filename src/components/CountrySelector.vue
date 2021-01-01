@@ -1,6 +1,5 @@
 <template>
   <div class="country-selector">
-    <label for="countrySelect">Choose a country:</label>
     <select id="countrySelect" v-model="selectedCountry" @change="onCountryChange">
       <option
         :value="option.code"
