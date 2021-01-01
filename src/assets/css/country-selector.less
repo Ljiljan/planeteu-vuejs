@@ -1,9 +1,10 @@
 @country-selector-height: 50px;
 @counrty-selector-gap: 10px;
+@country-selector-width: 535px;
 
 .country-selector {
     display: grid;
-    grid-template-columns: 40% auto auto;
+    grid-template-columns: minmax(auto, @country-selector-width) auto auto;
     place-content: center;
     gap: @counrty-selector-gap;
 

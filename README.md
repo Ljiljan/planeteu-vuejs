@@ -1,6 +1,6 @@
 # Planet EU - VueJS Project
 
-A simple application which showcase API from my website - [Planet EU](https://www.planeteu.com), it is capable to display information regarding public holidays in several european countries. Featuring HTML Geolocation API as well.
+A simple application which showcase API from my website - [Planet EU](https://www.planeteu.com), it is capable to display information regarding public holidays in several european countries. Featuring HTML Geolocation API functionality.
 
 Project is done in VueJS ver. 2.6
 
