@@ -1,0 +1,47 @@
+@export-holidays-button-width: 165px;
+@export-holidays-button-padding: 6px;
+@export-holidays-margin: 20px 0;
+@export-holidays-csv-icon-color: hsl(122, 39%, 49%);
+@export-holidays-json-icon-color: hsl(39, 100%, 50%);
+
+.export-holidays {
+    display: block;
+    margin: @export-holidays-margin;
+
+    button {
+        background: @border-color;
+        border: 2px solid darken(@color-main, 20%);
+        color: @color-text;
+
+        display: inline-grid;
+        grid-template-columns: 1fr 3fr;
+        place-items: center;
+        width: @export-holidays-button-width;
+        padding: @export-holidays-button-padding;
+
+        &:first-of-type {
+            margin-right: @margin-default;
+        }
+
+        &:hover {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        i {
+            font-style: normal;
+            font-weight: bold;
+            padding: 2px 5px;
+
+            color: @color-white;
+
+            &.csv-icon {
+                background: @export-holidays-csv-icon-color;
+            }
+
+            &.json-icon {
+                background: @export-holidays-json-icon-color;
+            }
+        }
+    }
+}

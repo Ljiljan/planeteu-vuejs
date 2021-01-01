@@ -1,0 +1,35 @@
+.holidays-table {
+    display: inline-block;
+
+    table {
+        border-collapse: collapse;
+        margin: auto;
+
+        th {
+            background: @color-main;
+            color: @color-white;
+            padding: 12px;
+        }
+
+        td {
+            border: 1px solid @border-color;
+            width: 33.3%;
+            padding: 8px;
+            word-break:break-all;
+        }
+    }
+}
+
+.msg {
+    display: block;
+    color: @color-white;
+    padding: 20px;
+
+    &__loading {
+        background-color: @color-main;
+    }
+
+    &__error {
+        background-color: @color-red;
+    }
+}

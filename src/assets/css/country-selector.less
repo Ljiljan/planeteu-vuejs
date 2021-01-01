@@ -1,0 +1,24 @@
+@country-selector-height: 50px;
+@counrty-selector-gap: 20px;
+
+.country-selector {
+    display: grid;
+    grid-template-columns: max-content 40% auto auto;
+    place-content: center;
+    gap: @counrty-selector-gap;
+
+    label {
+        text-align: right;
+        margin-right: @margin-default;
+        align-self: center;
+    }
+
+    select {
+        margin-right: @margin-default;
+        height: @country-selector-height;
+    }
+
+    .flag, .geo-location {
+        align-self: center;
+    }
+}

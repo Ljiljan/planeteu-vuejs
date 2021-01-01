@@ -1,0 +1,36 @@
+@year-switcher-border-radius: 5px;
+
+.year-switcher {
+    margin: @margin-default;
+
+    &__btn {
+        background-color: @color-main;
+        margin: 0 2px;
+        padding: 5px 10px;
+
+        border: 2px solid darken(@color-main, 20%);
+        border-radius: @year-switcher-border-radius;
+        color: @color-white;
+
+        &:hover {
+            cursor: pointer;
+            color: @color-gold;
+        }
+
+        &__reset {
+            background-color: @color-gold;
+            color: @color-text;
+
+            &:hover {
+                color: @color-main;
+            }
+        }
+    }
+
+    .highlighted {
+        background-color: darken(@color-main, 20%);
+
+        border: 2px solid @color-main;
+        color: @color-gold;
+    }
+}
