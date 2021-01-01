@@ -8,7 +8,8 @@ module.exports = {
   },
   devServer: {
     proxy: 'http://localhost:8080'
-  }
+  },
+  publicPath: '/planeteu-vuejs/'
 }
  
 function addStyleResource (rule) {
